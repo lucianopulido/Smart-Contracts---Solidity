@@ -1,0 +1,734 @@
+{
+	"id": "7be88431c76bdf9034605ffff84b5101",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.6.5",
+	"solcLongVersion": "0.6.5+commit.f956cc89",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"Tipos de variables y operadores/variables enteras.sol": {
+				"content": "pragma solidity >= 0.4.4 < 0.7.0;\r\n\r\n\r\ncontract enteros{\r\n\r\n    // variables enteras sin signo\r\n    uint mi_primer_entero;\r\n    uint mi_primer_entero_inicializado = 3;\r\n    uint cota = 5000;\r\n\r\n    // variables enteras sin signo con un número especifico de bits\r\n    uint8 entero_8_bits;\r\n    uint64 entero_64_bits = 700000;\r\n\r\n}\r\n"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"Tipos de variables y operadores/variables enteras.sol": {
+				"enteros": {
+					"abi": [],
+					"devdoc": {
+						"methods": {}
+					},
+					"evm": {
+						"assembly": "    /* \"Tipos de variables y operadores/variables enteras.sol\":39:330  contract enteros{\r... */\n  mstore(0x40, 0x80)\n    /* \"Tipos de variables y operadores/variables enteras.sol\":165:166  3 */\n  0x03\n    /* \"Tipos de variables y operadores/variables enteras.sol\":128:166  uint mi_primer_entero_inicializado = 3 */\n  0x01\n  sstore\n    /* \"Tipos de variables y operadores/variables enteras.sol\":185:189  5000 */\n  0x1388\n    /* \"Tipos de variables y operadores/variables enteras.sol\":173:189  uint cota = 5000 */\n  0x02\n  sstore\n    /* \"Tipos de variables y operadores/variables enteras.sol\":318:324  700000 */\n  0x0aae60\n    /* \"Tipos de variables y operadores/variables enteras.sol\":294:324  uint64 entero_64_bits = 700000 */\n  0x03\n  exp(0x0100, 0x01)\n  dup2\n  sload\n  dup2\n  0xffffffffffffffff\n  mul\n  not\n  and\n  swap1\n  dup4\n  0xffffffffffffffff\n  and\n  mul\n  or\n  swap1\n  sstore\n  pop\n    /* \"Tipos de variables y operadores/variables enteras.sol\":39:330  contract enteros{\r... */\n  callvalue\n    /* \"--CODEGEN--\":5:14   */\n  dup1\n    /* \"--CODEGEN--\":2:4   */\n  iszero\n  tag_1\n  jumpi\n    /* \"--CODEGEN--\":27:28   */\n  0x00\n    /* \"--CODEGEN--\":24:25   */\n  dup1\n    /* \"--CODEGEN--\":17:29   */\n  revert\n    /* \"--CODEGEN--\":2:4   */\ntag_1:\n    /* \"Tipos de variables y operadores/variables enteras.sol\":39:330  contract enteros{\r... */\n  pop\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"Tipos de variables y operadores/variables enteras.sol\":39:330  contract enteros{\r... */\n      mstore(0x40, 0x80)\n        /* \"--CODEGEN--\":12:13   */\n      0x00\n        /* \"--CODEGEN--\":9:10   */\n      dup1\n        /* \"--CODEGEN--\":2:14   */\n      revert\n\n    auxdata: 0xa26469706673582212206f66403e30adb19f9d0ecacc6f944e78e7a0f86f1ada9c031fea7944b336cf6964736f6c63430006050033\n}\n",
+						"bytecode": {
+							"linkReferences": {},
+							"object": "60806040526003600155611388600255620aae60600360016101000a81548167ffffffffffffffff021916908367ffffffffffffffff160217905550348015604657600080fd5b50603f8060546000396000f3fe6080604052600080fdfea26469706673582212206f66403e30adb19f9d0ecacc6f944e78e7a0f86f1ada9c031fea7944b336cf6964736f6c63430006050033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x3 PUSH1 0x1 SSTORE PUSH2 0x1388 PUSH1 0x2 SSTORE PUSH3 0xAAE60 PUSH1 0x3 PUSH1 0x1 PUSH2 0x100 EXP DUP2 SLOAD DUP2 PUSH8 0xFFFFFFFFFFFFFFFF MUL NOT AND SWAP1 DUP4 PUSH8 0xFFFFFFFFFFFFFFFF AND MUL OR SWAP1 SSTORE POP CALLVALUE DUP1 ISZERO PUSH1 0x46 JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x3F DUP1 PUSH1 0x54 PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 PUSH16 0x66403E30ADB19F9D0ECACC6F944E78E7 LOG0 0xF8 PUSH16 0x1ADA9C031FEA7944B336CF6964736F6C PUSH4 0x43000605 STOP CALLER ",
+							"sourceMap": "39:291:0:-:0;;;165:1;128:38;;185:4;173:16;;318:6;294:30;;;;;;;;;;;;;;;;;;;;39:291;5:9:-1;2:2;;;27:1;24;17:12;2:2;39:291:0;;;;;;;"
+						},
+						"deployedBytecode": {
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "6080604052600080fdfea26469706673582212206f66403e30adb19f9d0ecacc6f944e78e7a0f86f1ada9c031fea7944b336cf6964736f6c63430006050033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 PUSH16 0x66403E30ADB19F9D0ECACC6F944E78E7 LOG0 0xF8 PUSH16 0x1ADA9C031FEA7944B336CF6964736F6C PUSH4 0x43000605 STOP CALLER ",
+							"sourceMap": "39:291:0:-:0;;;12:1:-1;9;2:12"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "12600",
+								"executionCost": "60995",
+								"totalCost": "73595"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 39,
+									"end": 330,
+									"name": "PUSH",
+									"source": 0,
+									"value": "80"
+								},
+								{
+									"begin": 39,
+									"end": 330,
+									"name": "PUSH",
+									"source": 0,
+									"value": "40"
+								},
+								{
+									"begin": 39,
+									"end": 330,
+									"name": "MSTORE",
+									"source": 0
+								},
+								{
+									"begin": 165,
+									"end": 166,
+									"name": "PUSH",
+									"source": 0,
+									"value": "3"
+								},
+								{
+									"begin": 128,
+									"end": 166,
+									"name": "PUSH",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 128,
+									"end": 166,
+									"name": "SSTORE",
+									"source": 0
+								},
+								{
+									"begin": 185,
+									"end": 189,
+									"name": "PUSH",
+									"source": 0,
+									"value": "1388"
+								},
+								{
+									"begin": 173,
+									"end": 189,
+									"name": "PUSH",
+									"source": 0,
+									"value": "2"
+								},
+								{
+									"begin": 173,
+									"end": 189,
+									"name": "SSTORE",
+									"source": 0
+								},
+								{
+									"begin": 318,
+									"end": 324,
+									"name": "PUSH",
+									"source": 0,
+									"value": "AAE60"
+								},
+								{
+									"begin": 294,
+									"end": 324,
+									"name": "PUSH",
+									"source": 0,
+									"value": "3"
+								},
+								{
+									"begin": 294,
+									"end": 324,
+									"name": "PUSH",
+									"source": 0,
+									"value": "1"
+								},
+								{
+									"begin": 294,
+									"end": 324,
+									"name": "PUSH",
+									"source": 0,
+									"value": "100"
+								},
+								{
+									"begin": 294,
+									"end": 324,
+									"name": "EXP",
+									"source": 0
+								},
+								{
+									"begin": 294,
+									"end": 324,
+									"name": "DUP2",
+									"source": 0
+								},
+								{
+									"begin": 294,
+									"end": 324,
+									"name": "SLOAD",
+									"source": 0
+								},
+								{
+									"begin": 294,
+									"end": 324,
+									"name": "DUP2",
+									"source": 0
+								},
+								{
+									"begin": 294,
+									"end": 324,
+									"name": "PUSH",
+									"source": 0,
+									"value": "FFFFFFFFFFFFFFFF"
+								},
+								{
+									"begin": 294,
+									"end": 324,
+									"name": "MUL",
+									"source": 0
+								},
+								{
+									"begin": 294,
+									"end": 324,
+									"name": "NOT",
+									"source": 0
+								},
+								{
+									"begin": 294,
+									"end": 324,
+									"name": "AND",
+									"source": 0
+								},
+								{
+									"begin": 294,
+									"end": 324,
+									"name": "SWAP1",
+									"source": 0
+								},
+								{
+									"begin": 294,
+									"end": 324,
+									"name": "DUP4",
+									"source": 0
+								},
+								{
+									"begin": 294,
+									"end": 324,
+									"name": "PUSH",
+									"source": 0,
+									"value": "FFFFFFFFFFFFFFFF"
+								},
+								{
+									"begin": 294,
+									"end": 324,
+									"name": "AND",
+									"source": 0
+								},
+								{
+									"begin": 294,
+									"end": 324,
+									"name": "MUL",
+									"source": 0
+								},
+								{
+									"begin": 294,
+									"end": 324,
+									"name": "OR",
+									"source": 0
+								},
+								{
+									"begin": 294,
+									"end": 324,
+									"name": "SWAP1",
+									"source": 0
+								},
+								{
+									"begin": 294,
+									"end": 324,
+									"name": "SSTORE",
+									"source": 0
+								},
+								{
+									"begin": 294,
+									"end": 324,
+									"name": "POP",
+									"source": 0
+								},
+								{
+									"begin": 39,
+									"end": 330,
+									"name": "CALLVALUE",
+									"source": 0
+								},
+								{
+									"begin": 5,
+									"end": 14,
+									"name": "DUP1",
+									"source": -1
+								},
+								{
+									"begin": 2,
+									"end": 4,
+									"name": "ISZERO",
+									"source": -1
+								},
+								{
+									"begin": 2,
+									"end": 4,
+									"name": "PUSH [tag]",
+									"source": -1,
+									"value": "1"
+								},
+								{
+									"begin": 2,
+									"end": 4,
+									"name": "JUMPI",
+									"source": -1
+								},
+								{
+									"begin": 27,
+									"end": 28,
+									"name": "PUSH",
+									"source": -1,
+									"value": "0"
+								},
+								{
+									"begin": 24,
+									"end": 25,
+									"name": "DUP1",
+									"source": -1
+								},
+								{
+									"begin": 17,
+									"end": 29,
+									"name": "REVERT",
+									"source": -1
+								},
+								{
+									"begin": 2,
+									"end": 4,
+									"name": "tag",
+									"source": -1,
+									"value": "1"
+								},
+								{
+									"begin": 2,
+									"end": 4,
+									"name": "JUMPDEST",
+									"source": -1
+								},
+								{
+									"begin": 39,
+									"end": 330,
+									"name": "POP",
+									"source": 0
+								},
+								{
+									"begin": 39,
+									"end": 330,
+									"name": "PUSH #[$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 39,
+									"end": 330,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 39,
+									"end": 330,
+									"name": "PUSH [$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 39,
+									"end": 330,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 39,
+									"end": 330,
+									"name": "CODECOPY",
+									"source": 0
+								},
+								{
+									"begin": 39,
+									"end": 330,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 39,
+									"end": 330,
+									"name": "RETURN",
+									"source": 0
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a26469706673582212206f66403e30adb19f9d0ecacc6f944e78e7a0f86f1ada9c031fea7944b336cf6964736f6c63430006050033",
+									".code": [
+										{
+											"begin": 39,
+											"end": 330,
+											"name": "PUSH",
+											"source": 0,
+											"value": "80"
+										},
+										{
+											"begin": 39,
+											"end": 330,
+											"name": "PUSH",
+											"source": 0,
+											"value": "40"
+										},
+										{
+											"begin": 39,
+											"end": 330,
+											"name": "MSTORE",
+											"source": 0
+										},
+										{
+											"begin": 12,
+											"end": 13,
+											"name": "PUSH",
+											"source": -1,
+											"value": "0"
+										},
+										{
+											"begin": 9,
+											"end": 10,
+											"name": "DUP1",
+											"source": -1
+										},
+										{
+											"begin": 2,
+											"end": 14,
+											"name": "REVERT",
+											"source": -1
+										}
+									]
+								}
+							}
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.6.5+commit.f956cc89\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"Tipos de variables y operadores/variables enteras.sol\":\"enteros\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"Tipos de variables y operadores/variables enteras.sol\":{\"keccak256\":\"0xbd2441388c956e160d04d7fefcdbe01e9c5064aec2d0e7e43b479eeaaafbe133\",\"urls\":[\"bzz-raw://10aea0ce095e7677cf7b8b473c0e538cec4c1216cfb5df7f47f6ac1824b6bdf8\",\"dweb:/ipfs/Qmc23RNpxbw66fLsdbgaNxrBHPDGX6dknBdaoc5YQd44MW\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [
+							{
+								"astId": 3,
+								"contract": "Tipos de variables y operadores/variables enteras.sol:enteros",
+								"label": "mi_primer_entero",
+								"offset": 0,
+								"slot": "0",
+								"type": "t_uint256"
+							},
+							{
+								"astId": 6,
+								"contract": "Tipos de variables y operadores/variables enteras.sol:enteros",
+								"label": "mi_primer_entero_inicializado",
+								"offset": 0,
+								"slot": "1",
+								"type": "t_uint256"
+							},
+							{
+								"astId": 9,
+								"contract": "Tipos de variables y operadores/variables enteras.sol:enteros",
+								"label": "cota",
+								"offset": 0,
+								"slot": "2",
+								"type": "t_uint256"
+							},
+							{
+								"astId": 11,
+								"contract": "Tipos de variables y operadores/variables enteras.sol:enteros",
+								"label": "entero_8_bits",
+								"offset": 0,
+								"slot": "3",
+								"type": "t_uint8"
+							},
+							{
+								"astId": 14,
+								"contract": "Tipos de variables y operadores/variables enteras.sol:enteros",
+								"label": "entero_64_bits",
+								"offset": 1,
+								"slot": "3",
+								"type": "t_uint64"
+							}
+						],
+						"types": {
+							"t_uint256": {
+								"encoding": "inplace",
+								"label": "uint256",
+								"numberOfBytes": "32"
+							},
+							"t_uint64": {
+								"encoding": "inplace",
+								"label": "uint64",
+								"numberOfBytes": "8"
+							},
+							"t_uint8": {
+								"encoding": "inplace",
+								"label": "uint8",
+								"numberOfBytes": "1"
+							}
+						}
+					},
+					"userdoc": {
+						"methods": {}
+					}
+				}
+			}
+		},
+		"sources": {
+			"Tipos de variables y operadores/variables enteras.sol": {
+				"ast": {
+					"absolutePath": "Tipos de variables y operadores/variables enteras.sol",
+					"exportedSymbols": {
+						"enteros": [
+							15
+						]
+					},
+					"id": 16,
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								">=",
+								"0.4",
+								".4",
+								"<",
+								"0.7",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "0:33:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"documentation": null,
+							"fullyImplemented": true,
+							"id": 15,
+							"linearizedBaseContracts": [
+								15
+							],
+							"name": "enteros",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"constant": false,
+									"id": 3,
+									"name": "mi_primer_entero",
+									"nodeType": "VariableDeclaration",
+									"overrides": null,
+									"scope": 15,
+									"src": "100:21:0",
+									"stateVariable": true,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_uint256",
+										"typeString": "uint256"
+									},
+									"typeName": {
+										"id": 2,
+										"name": "uint",
+										"nodeType": "ElementaryTypeName",
+										"src": "100:4:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_uint256",
+											"typeString": "uint256"
+										}
+									},
+									"value": null,
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 6,
+									"name": "mi_primer_entero_inicializado",
+									"nodeType": "VariableDeclaration",
+									"overrides": null,
+									"scope": 15,
+									"src": "128:38:0",
+									"stateVariable": true,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_uint256",
+										"typeString": "uint256"
+									},
+									"typeName": {
+										"id": 4,
+										"name": "uint",
+										"nodeType": "ElementaryTypeName",
+										"src": "128:4:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_uint256",
+											"typeString": "uint256"
+										}
+									},
+									"value": {
+										"argumentTypes": null,
+										"hexValue": "33",
+										"id": 5,
+										"isConstant": false,
+										"isLValue": false,
+										"isPure": true,
+										"kind": "number",
+										"lValueRequested": false,
+										"nodeType": "Literal",
+										"src": "165:1:0",
+										"subdenomination": null,
+										"typeDescriptions": {
+											"typeIdentifier": "t_rational_3_by_1",
+											"typeString": "int_const 3"
+										},
+										"value": "3"
+									},
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 9,
+									"name": "cota",
+									"nodeType": "VariableDeclaration",
+									"overrides": null,
+									"scope": 15,
+									"src": "173:16:0",
+									"stateVariable": true,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_uint256",
+										"typeString": "uint256"
+									},
+									"typeName": {
+										"id": 7,
+										"name": "uint",
+										"nodeType": "ElementaryTypeName",
+										"src": "173:4:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_uint256",
+											"typeString": "uint256"
+										}
+									},
+									"value": {
+										"argumentTypes": null,
+										"hexValue": "35303030",
+										"id": 8,
+										"isConstant": false,
+										"isLValue": false,
+										"isPure": true,
+										"kind": "number",
+										"lValueRequested": false,
+										"nodeType": "Literal",
+										"src": "185:4:0",
+										"subdenomination": null,
+										"typeDescriptions": {
+											"typeIdentifier": "t_rational_5000_by_1",
+											"typeString": "int_const 5000"
+										},
+										"value": "5000"
+									},
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 11,
+									"name": "entero_8_bits",
+									"nodeType": "VariableDeclaration",
+									"overrides": null,
+									"scope": 15,
+									"src": "268:19:0",
+									"stateVariable": true,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_uint8",
+										"typeString": "uint8"
+									},
+									"typeName": {
+										"id": 10,
+										"name": "uint8",
+										"nodeType": "ElementaryTypeName",
+										"src": "268:5:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_uint8",
+											"typeString": "uint8"
+										}
+									},
+									"value": null,
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 14,
+									"name": "entero_64_bits",
+									"nodeType": "VariableDeclaration",
+									"overrides": null,
+									"scope": 15,
+									"src": "294:30:0",
+									"stateVariable": true,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_uint64",
+										"typeString": "uint64"
+									},
+									"typeName": {
+										"id": 12,
+										"name": "uint64",
+										"nodeType": "ElementaryTypeName",
+										"src": "294:6:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_uint64",
+											"typeString": "uint64"
+										}
+									},
+									"value": {
+										"argumentTypes": null,
+										"hexValue": "373030303030",
+										"id": 13,
+										"isConstant": false,
+										"isLValue": false,
+										"isPure": true,
+										"kind": "number",
+										"lValueRequested": false,
+										"nodeType": "Literal",
+										"src": "318:6:0",
+										"subdenomination": null,
+										"typeDescriptions": {
+											"typeIdentifier": "t_rational_700000_by_1",
+											"typeString": "int_const 700000"
+										},
+										"value": "700000"
+									},
+									"visibility": "internal"
+								}
+							],
+							"scope": 16,
+							"src": "39:291:0"
+						}
+					],
+					"src": "0:332:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

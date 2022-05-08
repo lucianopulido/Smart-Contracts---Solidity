@@ -1,0 +1,384 @@
+{
+	"id": "a9de09f0456977075ed6e6baaf368ae1",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.6.5",
+	"solcLongVersion": "0.6.5+commit.f956cc89",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"Tipos de variables y operadores/enums.sol": {
+				"content": "pragma solidity >= 0.4.4 < 0.7.0;\r\n\r\ncontract Ejemplos_enumeraciones{\r\n\r\n    // Enumeraciones de interruptor\r\n    enum estado {ON,OFF}\r\n\r\n    // Variable de tipo enum\r\n    estado interruptor;\r\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"Tipos de variables y operadores/enums.sol": {
+				"Ejemplos_enumeraciones": {
+					"abi": [],
+					"devdoc": {
+						"methods": {}
+					},
+					"evm": {
+						"assembly": "    /* \"Tipos de variables y operadores/enums.sol\":37:194  contract Ejemplos_enumeraciones{\r... */\n  mstore(0x40, 0x80)\n  callvalue\n    /* \"--CODEGEN--\":5:14   */\n  dup1\n    /* \"--CODEGEN--\":2:4   */\n  iszero\n  tag_1\n  jumpi\n    /* \"--CODEGEN--\":27:28   */\n  0x00\n    /* \"--CODEGEN--\":24:25   */\n  dup1\n    /* \"--CODEGEN--\":17:29   */\n  revert\n    /* \"--CODEGEN--\":2:4   */\ntag_1:\n    /* \"Tipos de variables y operadores/enums.sol\":37:194  contract Ejemplos_enumeraciones{\r... */\n  pop\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"Tipos de variables y operadores/enums.sol\":37:194  contract Ejemplos_enumeraciones{\r... */\n      mstore(0x40, 0x80)\n        /* \"--CODEGEN--\":12:13   */\n      0x00\n        /* \"--CODEGEN--\":9:10   */\n      dup1\n        /* \"--CODEGEN--\":2:14   */\n      revert\n\n    auxdata: 0xa2646970667358221220941b39729b3e84f481ceb64077423076055f92dc856ae3bc78bea9e64f10519d64736f6c63430006050033\n}\n",
+						"bytecode": {
+							"linkReferences": {},
+							"object": "6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220941b39729b3e84f481ceb64077423076055f92dc856ae3bc78bea9e64f10519d64736f6c63430006050033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x3F DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 SWAP5 SHL CODECOPY PUSH19 0x9B3E84F481CEB64077423076055F92DC856AE3 0xBC PUSH25 0xBEA9E64F10519D64736F6C6343000605003300000000000000 ",
+							"sourceMap": "37:157:0:-:0;;;;5:9:-1;2:2;;;27:1;24;17:12;2:2;37:157:0;;;;;;;"
+						},
+						"deployedBytecode": {
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "6080604052600080fdfea2646970667358221220941b39729b3e84f481ceb64077423076055f92dc856ae3bc78bea9e64f10519d64736f6c63430006050033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 SWAP5 SHL CODECOPY PUSH19 0x9B3E84F481CEB64077423076055F92DC856AE3 0xBC PUSH25 0xBEA9E64F10519D64736F6C6343000605003300000000000000 ",
+							"sourceMap": "37:157:0:-:0;;;12:1:-1;9;2:12"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "12600",
+								"executionCost": "66",
+								"totalCost": "12666"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 37,
+									"end": 194,
+									"name": "PUSH",
+									"source": 0,
+									"value": "80"
+								},
+								{
+									"begin": 37,
+									"end": 194,
+									"name": "PUSH",
+									"source": 0,
+									"value": "40"
+								},
+								{
+									"begin": 37,
+									"end": 194,
+									"name": "MSTORE",
+									"source": 0
+								},
+								{
+									"begin": 37,
+									"end": 194,
+									"name": "CALLVALUE",
+									"source": 0
+								},
+								{
+									"begin": 5,
+									"end": 14,
+									"name": "DUP1",
+									"source": -1
+								},
+								{
+									"begin": 2,
+									"end": 4,
+									"name": "ISZERO",
+									"source": -1
+								},
+								{
+									"begin": 2,
+									"end": 4,
+									"name": "PUSH [tag]",
+									"source": -1,
+									"value": "1"
+								},
+								{
+									"begin": 2,
+									"end": 4,
+									"name": "JUMPI",
+									"source": -1
+								},
+								{
+									"begin": 27,
+									"end": 28,
+									"name": "PUSH",
+									"source": -1,
+									"value": "0"
+								},
+								{
+									"begin": 24,
+									"end": 25,
+									"name": "DUP1",
+									"source": -1
+								},
+								{
+									"begin": 17,
+									"end": 29,
+									"name": "REVERT",
+									"source": -1
+								},
+								{
+									"begin": 2,
+									"end": 4,
+									"name": "tag",
+									"source": -1,
+									"value": "1"
+								},
+								{
+									"begin": 2,
+									"end": 4,
+									"name": "JUMPDEST",
+									"source": -1
+								},
+								{
+									"begin": 37,
+									"end": 194,
+									"name": "POP",
+									"source": 0
+								},
+								{
+									"begin": 37,
+									"end": 194,
+									"name": "PUSH #[$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 37,
+									"end": 194,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 37,
+									"end": 194,
+									"name": "PUSH [$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 37,
+									"end": 194,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 37,
+									"end": 194,
+									"name": "CODECOPY",
+									"source": 0
+								},
+								{
+									"begin": 37,
+									"end": 194,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 37,
+									"end": 194,
+									"name": "RETURN",
+									"source": 0
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a2646970667358221220941b39729b3e84f481ceb64077423076055f92dc856ae3bc78bea9e64f10519d64736f6c63430006050033",
+									".code": [
+										{
+											"begin": 37,
+											"end": 194,
+											"name": "PUSH",
+											"source": 0,
+											"value": "80"
+										},
+										{
+											"begin": 37,
+											"end": 194,
+											"name": "PUSH",
+											"source": 0,
+											"value": "40"
+										},
+										{
+											"begin": 37,
+											"end": 194,
+											"name": "MSTORE",
+											"source": 0
+										},
+										{
+											"begin": 12,
+											"end": 13,
+											"name": "PUSH",
+											"source": -1,
+											"value": "0"
+										},
+										{
+											"begin": 9,
+											"end": 10,
+											"name": "DUP1",
+											"source": -1
+										},
+										{
+											"begin": 2,
+											"end": 14,
+											"name": "REVERT",
+											"source": -1
+										}
+									]
+								}
+							}
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.6.5+commit.f956cc89\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"Tipos de variables y operadores/enums.sol\":\"Ejemplos_enumeraciones\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"Tipos de variables y operadores/enums.sol\":{\"keccak256\":\"0x7584c064c4c77dbaa227ab62ade9263809d41197f4502003728d951f8646d694\",\"urls\":[\"bzz-raw://5d9ab2b6c2f788ba70fa9e37a2c6dabd4daadae3846d9fa034cb705d0cc33754\",\"dweb:/ipfs/QmXSMDWAe9bBsr4z4Rj99jWoniecSJ8QQtCmdRJhGdvM31\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [
+							{
+								"astId": 6,
+								"contract": "Tipos de variables y operadores/enums.sol:Ejemplos_enumeraciones",
+								"label": "interruptor",
+								"offset": 0,
+								"slot": "0",
+								"type": "t_enum(estado)4"
+							}
+						],
+						"types": {
+							"t_enum(estado)4": {
+								"encoding": "inplace",
+								"label": "enum Ejemplos_enumeraciones.estado",
+								"numberOfBytes": "1"
+							}
+						}
+					},
+					"userdoc": {
+						"methods": {}
+					}
+				}
+			}
+		},
+		"sources": {
+			"Tipos de variables y operadores/enums.sol": {
+				"ast": {
+					"absolutePath": "Tipos de variables y operadores/enums.sol",
+					"exportedSymbols": {
+						"Ejemplos_enumeraciones": [
+							7
+						]
+					},
+					"id": 8,
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								">=",
+								"0.4",
+								".4",
+								"<",
+								"0.7",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "0:33:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"documentation": null,
+							"fullyImplemented": true,
+							"id": 7,
+							"linearizedBaseContracts": [
+								7
+							],
+							"name": "Ejemplos_enumeraciones",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"canonicalName": "Ejemplos_enumeraciones.estado",
+									"id": 4,
+									"members": [
+										{
+											"id": 2,
+											"name": "ON",
+											"nodeType": "EnumValue",
+											"src": "127:2:0"
+										},
+										{
+											"id": 3,
+											"name": "OFF",
+											"nodeType": "EnumValue",
+											"src": "130:3:0"
+										}
+									],
+									"name": "estado",
+									"nodeType": "EnumDefinition",
+									"src": "114:20:0"
+								},
+								{
+									"constant": false,
+									"id": 6,
+									"name": "interruptor",
+									"nodeType": "VariableDeclaration",
+									"overrides": null,
+									"scope": 7,
+									"src": "172:18:0",
+									"stateVariable": true,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_enum$_estado_$4",
+										"typeString": "enum Ejemplos_enumeraciones.estado"
+									},
+									"typeName": {
+										"contractScope": null,
+										"id": 5,
+										"name": "estado",
+										"nodeType": "UserDefinedTypeName",
+										"referencedDeclaration": 4,
+										"src": "172:6:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_enum$_estado_$4",
+											"typeString": "enum Ejemplos_enumeraciones.estado"
+										}
+									},
+									"value": null,
+									"visibility": "internal"
+								}
+							],
+							"scope": 8,
+							"src": "37:157:0"
+						}
+					],
+					"src": "0:194:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

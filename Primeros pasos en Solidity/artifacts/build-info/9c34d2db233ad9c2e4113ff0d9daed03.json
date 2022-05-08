@@ -1,0 +1,285 @@
+{
+	"id": "9c34d2db233ad9c2e4113ff0d9daed03",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.5.0",
+	"solcLongVersion": "0.5.0+commit.1d4f565a",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"Primeros pasos en Solidity/primer_contrato.sol": {
+				"content": "pragma solidity >= 0.4.4 <0.7.0;\r\n\r\ncontract PrimerContrato{\r\n    \r\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"Primeros pasos en Solidity/primer_contrato.sol": {
+				"PrimerContrato": {
+					"abi": [],
+					"devdoc": {
+						"methods": {}
+					},
+					"evm": {
+						"assembly": "    /* \"Primeros pasos en Solidity/primer_contrato.sol\":36:69  contract PrimerContrato{\r... */\n  mstore(0x40, 0x80)\n  callvalue\n    /* \"--CODEGEN--\":8:17   */\n  dup1\n    /* \"--CODEGEN--\":5:7   */\n  iszero\n  tag_1\n  jumpi\n    /* \"--CODEGEN--\":30:31   */\n  0x0\n    /* \"--CODEGEN--\":27:28   */\n  dup1\n    /* \"--CODEGEN--\":20:32   */\n  revert\n    /* \"--CODEGEN--\":5:7   */\ntag_1:\n    /* \"Primeros pasos en Solidity/primer_contrato.sol\":36:69  contract PrimerContrato{\r... */\n  pop\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x0\n  codecopy\n  0x0\n  return\nstop\n\nsub_0: assembly {\n        /* \"Primeros pasos en Solidity/primer_contrato.sol\":36:69  contract PrimerContrato{\r... */\n      mstore(0x40, 0x80)\n      0x0\n      dup1\n      revert\n\n    auxdata: 0xa165627a7a723058201b7fe029c4359b4717d308bafb2e85c854b28b3f80941c6fe81e755fea7fdaa10029\n}\n",
+						"bytecode": {
+							"linkReferences": {},
+							"object": "6080604052348015600f57600080fd5b50603580601d6000396000f3fe6080604052600080fdfea165627a7a723058201b7fe029c4359b4717d308bafb2e85c854b28b3f80941c6fe81e755fea7fdaa10029",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x35 DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG1 PUSH6 0x627A7A723058 KECCAK256 SHL PUSH32 0xE029C4359B4717D308BAFB2E85C854B28B3F80941C6FE81E755FEA7FDAA10029 ",
+							"sourceMap": "36:33:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;36:33:0;;;;;;;"
+						},
+						"deployedBytecode": {
+							"linkReferences": {},
+							"object": "6080604052600080fdfea165627a7a723058201b7fe029c4359b4717d308bafb2e85c854b28b3f80941c6fe81e755fea7fdaa10029",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG1 PUSH6 0x627A7A723058 KECCAK256 SHL PUSH32 0xE029C4359B4717D308BAFB2E85C854B28B3F80941C6FE81E755FEA7FDAA10029 ",
+							"sourceMap": "36:33:0:-;;;;;"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "10600",
+								"executionCost": "66",
+								"totalCost": "10666"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 36,
+									"end": 69,
+									"name": "PUSH",
+									"value": "80"
+								},
+								{
+									"begin": 36,
+									"end": 69,
+									"name": "PUSH",
+									"value": "40"
+								},
+								{
+									"begin": 36,
+									"end": 69,
+									"name": "MSTORE"
+								},
+								{
+									"begin": 36,
+									"end": 69,
+									"name": "CALLVALUE"
+								},
+								{
+									"begin": 8,
+									"end": 17,
+									"name": "DUP1"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "ISZERO"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "PUSH [tag]",
+									"value": "1"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "JUMPI"
+								},
+								{
+									"begin": 30,
+									"end": 31,
+									"name": "PUSH",
+									"value": "0"
+								},
+								{
+									"begin": 27,
+									"end": 28,
+									"name": "DUP1"
+								},
+								{
+									"begin": 20,
+									"end": 32,
+									"name": "REVERT"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "tag",
+									"value": "1"
+								},
+								{
+									"begin": 5,
+									"end": 7,
+									"name": "JUMPDEST"
+								},
+								{
+									"begin": 36,
+									"end": 69,
+									"name": "POP"
+								},
+								{
+									"begin": 36,
+									"end": 69,
+									"name": "PUSH #[$]",
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 36,
+									"end": 69,
+									"name": "DUP1"
+								},
+								{
+									"begin": 36,
+									"end": 69,
+									"name": "PUSH [$]",
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 36,
+									"end": 69,
+									"name": "PUSH",
+									"value": "0"
+								},
+								{
+									"begin": 36,
+									"end": 69,
+									"name": "CODECOPY"
+								},
+								{
+									"begin": 36,
+									"end": 69,
+									"name": "PUSH",
+									"value": "0"
+								},
+								{
+									"begin": 36,
+									"end": 69,
+									"name": "RETURN"
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a165627a7a723058201b7fe029c4359b4717d308bafb2e85c854b28b3f80941c6fe81e755fea7fdaa10029",
+									".code": [
+										{
+											"begin": 36,
+											"end": 69,
+											"name": "PUSH",
+											"value": "80"
+										},
+										{
+											"begin": 36,
+											"end": 69,
+											"name": "PUSH",
+											"value": "40"
+										},
+										{
+											"begin": 36,
+											"end": 69,
+											"name": "MSTORE"
+										},
+										{
+											"begin": 36,
+											"end": 69,
+											"name": "PUSH",
+											"value": "0"
+										},
+										{
+											"begin": 36,
+											"end": 69,
+											"name": "DUP1"
+										},
+										{
+											"begin": 36,
+											"end": 69,
+											"name": "REVERT"
+										}
+									]
+								}
+							}
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.5.0+commit.1d4f565a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"Primeros pasos en Solidity/primer_contrato.sol\":\"PrimerContrato\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"Primeros pasos en Solidity/primer_contrato.sol\":{\"keccak256\":\"0x4fee8e2df257690e6f95140882b70ec62112ceda958647c5bcb4e2827a993a53\",\"urls\":[\"bzzr://6ae3f8278ce28e59181f3a20d74676642bd64b683c1cbf507649600b8e09df50\"]}},\"version\":1}",
+					"userdoc": {
+						"methods": {}
+					}
+				}
+			}
+		},
+		"sources": {
+			"Primeros pasos en Solidity/primer_contrato.sol": {
+				"ast": {
+					"absolutePath": "Primeros pasos en Solidity/primer_contrato.sol",
+					"exportedSymbols": {
+						"PrimerContrato": [
+							2
+						]
+					},
+					"id": 3,
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								">=",
+								"0.4",
+								".4",
+								"<",
+								"0.7",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "0:32:0"
+						},
+						{
+							"baseContracts": [],
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"documentation": null,
+							"fullyImplemented": true,
+							"id": 2,
+							"linearizedBaseContracts": [
+								2
+							],
+							"name": "PrimerContrato",
+							"nodeType": "ContractDefinition",
+							"nodes": [],
+							"scope": 3,
+							"src": "36:33:0"
+						}
+					],
+					"src": "0:69:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

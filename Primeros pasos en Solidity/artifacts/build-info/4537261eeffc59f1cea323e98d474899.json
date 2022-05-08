@@ -1,0 +1,67 @@
+{
+	"id": "4537261eeffc59f1cea323e98d474899",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.4.0",
+	"solcLongVersion": "0.4.0+commit.acd334c9",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"Primeros pasos en Solidity/primer_contrato.sol": {
+				"content": "pragma solidity ^0.4.0;"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"errors": [],
+		"contracts": {},
+		"sources": {
+			"Primeros pasos en Solidity/primer_contrato.sol": {
+				"id": "0",
+				"legacyAST": {
+					"children": [
+						{
+							"attributes": {
+								"literals": [
+									"solidity",
+									"^",
+									"0.4",
+									".0"
+								]
+							},
+							"id": 5597340,
+							"name": "PragmaDirective",
+							"src": "0:23:0"
+						}
+					],
+					"name": "SourceUnit"
+				}
+			}
+		}
+	}
+}
