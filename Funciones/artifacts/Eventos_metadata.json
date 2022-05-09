@@ -1,0 +1,166 @@
+{
+	"compiler": {
+		"version": "0.6.5+commit.f956cc89"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [],
+				"name": "abortarMisionEvento",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "_nombrePersona",
+						"type": "string"
+					}
+				],
+				"name": "nombre_evento1",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "_nombrePersona",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "_edadPersona",
+						"type": "uint256"
+					}
+				],
+				"name": "nombre_evento2",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					},
+					{
+						"indexed": false,
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					},
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"indexed": false,
+						"internalType": "bytes32",
+						"name": "",
+						"type": "bytes32"
+					}
+				],
+				"name": "nombre_evento3",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "abortarMision",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_nombrePersona",
+						"type": "string"
+					}
+				],
+				"name": "emitirEvento1",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_nombrePersona",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_edadPersona",
+						"type": "uint256"
+					}
+				],
+				"name": "emitirEvento2",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_nombrePersona",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_edadPersona",
+						"type": "uint256"
+					}
+				],
+				"name": "emitirEvento3",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Funciones/eventos.sol": "Eventos"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Funciones/eventos.sol": {
+			"keccak256": "0x315f4c77b73366608696e5fe648b2b962074b52a37cddc593b11866a32d444b4",
+			"urls": [
+				"bzz-raw://f5f87f5091420136622367191420b436e208790e37af3f61c6f28c1ab6d6b91a",
+				"dweb:/ipfs/QmXr6LWafsieaPXAsVKr9H6195jrg8623mncHJsTNsHe3Z"
+			]
+		}
+	},
+	"version": 1
+}

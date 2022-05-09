@@ -1,0 +1,164 @@
+{
+	"compiler": {
+		"version": "0.6.5+commit.f956cc89"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_num1",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_num2",
+						"type": "uint256"
+					}
+				],
+				"name": "exponenciacion",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_alumno",
+						"type": "string"
+					}
+				],
+				"name": "nuevo_alumno",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_nombre",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_dinero",
+						"type": "uint256"
+					}
+				],
+				"name": "pagar",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_y",
+						"type": "uint256"
+					}
+				],
+				"name": "sumar",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "verSaldo",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "string",
+								"name": "nombre",
+								"type": "string"
+							},
+							{
+								"internalType": "address",
+								"name": "direccion",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "saldo",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct view_pure_payable.Cartera",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_posicion",
+						"type": "uint256"
+					}
+				],
+				"name": "ver_alumno",
+				"outputs": [
+					{
+						"internalType": "string",
+						"name": "",
+						"type": "string"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Funciones/modificadores.sol": "view_pure_payable"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Funciones/modificadores.sol": {
+			"keccak256": "0x48f355682b811763cd7824bc5dd6bebc87ff763ac7264ec17289e04eb24ba256",
+			"urls": [
+				"bzz-raw://2d36b7741be1e7cf584a450af013b79b51ff8feadd9112a31d004558c17aa434",
+				"dweb:/ipfs/QmPwVEUbEaomb6Pja9FQLZEVdYwet2URz2FdmfPgiApQxo"
+			]
+		}
+	},
+	"version": 1
+}
