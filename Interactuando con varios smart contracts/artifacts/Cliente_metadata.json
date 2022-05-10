@@ -1,0 +1,135 @@
+{
+	"compiler": {
+		"version": "0.6.5+commit.f956cc89"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_nombre",
+						"type": "string"
+					}
+				],
+				"name": "consultarDinero",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_nombre",
+						"type": "string"
+					}
+				],
+				"name": "crearCliente",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_nombre",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_cantidad",
+						"type": "uint256"
+					}
+				],
+				"name": "ingresarDinero",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_nombre",
+						"type": "string"
+					}
+				],
+				"name": "nuevoCliente",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_nombre",
+						"type": "string"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_cantidad",
+						"type": "uint256"
+					}
+				],
+				"name": "retirarDinero",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Interactuando con varios smart contracts/Cliente.sol": "Cliente"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Interactuando con varios smart contracts/Banco.sol": {
+			"keccak256": "0x0c3e5d1c16f1394882a6fd4d741db235ca316da5f04e03e8914608fc06b928b3",
+			"urls": [
+				"bzz-raw://50036a1d70812dbc392e5018fe02d79af2134cafd532f54033f25221916e6159",
+				"dweb:/ipfs/QmZTk6ujbQZR8RDX4UHdrDkjZyQTjj4B4LLVGJofFYHi8e"
+			]
+		},
+		"Interactuando con varios smart contracts/Cliente.sol": {
+			"keccak256": "0x9b126f3264345de1c6d2a1da8e2ccddfd8836640c2cb634b5516567ccddce711",
+			"urls": [
+				"bzz-raw://cde549a25b6824b1fad447173c67474272ef82146ce5e52291f5380e218c3a1a",
+				"dweb:/ipfs/QmcP7qJCosiZQ1nJ89EaLBRCH71yQX7wDjhQytdKP1abho"
+			]
+		}
+	},
+	"version": 1
+}

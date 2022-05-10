@@ -1,0 +1,54 @@
+{
+	"compiler": {
+		"version": "0.6.5+commit.f956cc89"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [
+					{
+						"internalType": "string",
+						"name": "_nombre",
+						"type": "string"
+					}
+				],
+				"name": "nuevoCliente",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"methods": {}
+		},
+		"userdoc": {
+			"methods": {}
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Interactuando con varios smart contracts/Banco.sol": "Banco"
+		},
+		"evmVersion": "istanbul",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Interactuando con varios smart contracts/Banco.sol": {
+			"keccak256": "0x0c3e5d1c16f1394882a6fd4d741db235ca316da5f04e03e8914608fc06b928b3",
+			"urls": [
+				"bzz-raw://50036a1d70812dbc392e5018fe02d79af2134cafd532f54033f25221916e6159",
+				"dweb:/ipfs/QmZTk6ujbQZR8RDX4UHdrDkjZyQTjj4B4LLVGJofFYHi8e"
+			]
+		}
+	},
+	"version": 1
+}
