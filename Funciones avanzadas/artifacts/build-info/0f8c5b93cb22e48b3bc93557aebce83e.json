@@ -1,0 +1,583 @@
+{
+	"id": "0f8c5b93cb22e48b3bc93557aebce83e",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.6.5",
+	"solcLongVersion": "0.6.5+commit.f956cc89",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"Funciones avanzadas/internal_external.sol": {
+				"content": "//Especificamos la version\r\npragma solidity >=0.4.4 <0.7.0;\r\n\r\ncontract Comida{\r\n\r\n}\r\n\r\ncontract Sandwich is Comida{\r\n    \r\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"Funciones avanzadas/internal_external.sol": {
+				"Comida": {
+					"abi": [],
+					"devdoc": {
+						"methods": {}
+					},
+					"evm": {
+						"assembly": "    /* \"Funciones avanzadas/internal_external.sol\":63:84  contract Comida{\r... */\n  mstore(0x40, 0x80)\n  callvalue\n    /* \"--CODEGEN--\":5:14   */\n  dup1\n    /* \"--CODEGEN--\":2:4   */\n  iszero\n  tag_1\n  jumpi\n    /* \"--CODEGEN--\":27:28   */\n  0x00\n    /* \"--CODEGEN--\":24:25   */\n  dup1\n    /* \"--CODEGEN--\":17:29   */\n  revert\n    /* \"--CODEGEN--\":2:4   */\ntag_1:\n    /* \"Funciones avanzadas/internal_external.sol\":63:84  contract Comida{\r... */\n  pop\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"Funciones avanzadas/internal_external.sol\":63:84  contract Comida{\r... */\n      mstore(0x40, 0x80)\n        /* \"--CODEGEN--\":12:13   */\n      0x00\n        /* \"--CODEGEN--\":9:10   */\n      dup1\n        /* \"--CODEGEN--\":2:14   */\n      revert\n\n    auxdata: 0xa26469706673582212200cffe54b6493b42ae3b0fa3efec9b2872784bb76ef17313456347c921f1cbed264736f6c63430006050033\n}\n",
+						"bytecode": {
+							"linkReferences": {},
+							"object": "6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea26469706673582212200cffe54b6493b42ae3b0fa3efec9b2872784bb76ef17313456347c921f1cbed264736f6c63430006050033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x3F DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xC SELFDESTRUCT 0xE5 0x4B PUSH5 0x93B42AE3B0 STATICCALL RETURNDATACOPY INVALID 0xC9 0xB2 DUP8 0x27 DUP5 0xBB PUSH23 0xEF17313456347C921F1CBED264736F6C63430006050033 ",
+							"sourceMap": "63:21:0:-:0;;;;5:9:-1;2:2;;;27:1;24;17:12;2:2;63:21:0;;;;;;;"
+						},
+						"deployedBytecode": {
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "6080604052600080fdfea26469706673582212200cffe54b6493b42ae3b0fa3efec9b2872784bb76ef17313456347c921f1cbed264736f6c63430006050033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xC SELFDESTRUCT 0xE5 0x4B PUSH5 0x93B42AE3B0 STATICCALL RETURNDATACOPY INVALID 0xC9 0xB2 DUP8 0x27 DUP5 0xBB PUSH23 0xEF17313456347C921F1CBED264736F6C63430006050033 ",
+							"sourceMap": "63:21:0:-:0;;;12:1:-1;9;2:12"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "12600",
+								"executionCost": "66",
+								"totalCost": "12666"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 63,
+									"end": 84,
+									"name": "PUSH",
+									"source": 0,
+									"value": "80"
+								},
+								{
+									"begin": 63,
+									"end": 84,
+									"name": "PUSH",
+									"source": 0,
+									"value": "40"
+								},
+								{
+									"begin": 63,
+									"end": 84,
+									"name": "MSTORE",
+									"source": 0
+								},
+								{
+									"begin": 63,
+									"end": 84,
+									"name": "CALLVALUE",
+									"source": 0
+								},
+								{
+									"begin": 5,
+									"end": 14,
+									"name": "DUP1",
+									"source": -1
+								},
+								{
+									"begin": 2,
+									"end": 4,
+									"name": "ISZERO",
+									"source": -1
+								},
+								{
+									"begin": 2,
+									"end": 4,
+									"name": "PUSH [tag]",
+									"source": -1,
+									"value": "1"
+								},
+								{
+									"begin": 2,
+									"end": 4,
+									"name": "JUMPI",
+									"source": -1
+								},
+								{
+									"begin": 27,
+									"end": 28,
+									"name": "PUSH",
+									"source": -1,
+									"value": "0"
+								},
+								{
+									"begin": 24,
+									"end": 25,
+									"name": "DUP1",
+									"source": -1
+								},
+								{
+									"begin": 17,
+									"end": 29,
+									"name": "REVERT",
+									"source": -1
+								},
+								{
+									"begin": 2,
+									"end": 4,
+									"name": "tag",
+									"source": -1,
+									"value": "1"
+								},
+								{
+									"begin": 2,
+									"end": 4,
+									"name": "JUMPDEST",
+									"source": -1
+								},
+								{
+									"begin": 63,
+									"end": 84,
+									"name": "POP",
+									"source": 0
+								},
+								{
+									"begin": 63,
+									"end": 84,
+									"name": "PUSH #[$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 63,
+									"end": 84,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 63,
+									"end": 84,
+									"name": "PUSH [$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 63,
+									"end": 84,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 63,
+									"end": 84,
+									"name": "CODECOPY",
+									"source": 0
+								},
+								{
+									"begin": 63,
+									"end": 84,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 63,
+									"end": 84,
+									"name": "RETURN",
+									"source": 0
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a26469706673582212200cffe54b6493b42ae3b0fa3efec9b2872784bb76ef17313456347c921f1cbed264736f6c63430006050033",
+									".code": [
+										{
+											"begin": 63,
+											"end": 84,
+											"name": "PUSH",
+											"source": 0,
+											"value": "80"
+										},
+										{
+											"begin": 63,
+											"end": 84,
+											"name": "PUSH",
+											"source": 0,
+											"value": "40"
+										},
+										{
+											"begin": 63,
+											"end": 84,
+											"name": "MSTORE",
+											"source": 0
+										},
+										{
+											"begin": 12,
+											"end": 13,
+											"name": "PUSH",
+											"source": -1,
+											"value": "0"
+										},
+										{
+											"begin": 9,
+											"end": 10,
+											"name": "DUP1",
+											"source": -1
+										},
+										{
+											"begin": 2,
+											"end": 14,
+											"name": "REVERT",
+											"source": -1
+										}
+									]
+								}
+							}
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.6.5+commit.f956cc89\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"Funciones avanzadas/internal_external.sol\":\"Comida\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"Funciones avanzadas/internal_external.sol\":{\"keccak256\":\"0x3d61417b0c7f3d3d975b65ef5981e061364c87ee538f967af1301e5a36a3f38b\",\"urls\":[\"bzz-raw://6601bc9f9ce47ec6df19ba5f9c722d464614595cf7c8e9858622e314fe0337ae\",\"dweb:/ipfs/QmVn9FugrU1Eaqi6KkWrtsnGRa2NhmwpAFpg4kbsgScbVF\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [],
+						"types": null
+					},
+					"userdoc": {
+						"methods": {}
+					}
+				},
+				"Sandwich": {
+					"abi": [],
+					"devdoc": {
+						"methods": {}
+					},
+					"evm": {
+						"assembly": "    /* \"Funciones avanzadas/internal_external.sol\":88:125  contract Sandwich is Comida{\r... */\n  mstore(0x40, 0x80)\n  callvalue\n    /* \"--CODEGEN--\":5:14   */\n  dup1\n    /* \"--CODEGEN--\":2:4   */\n  iszero\n  tag_1\n  jumpi\n    /* \"--CODEGEN--\":27:28   */\n  0x00\n    /* \"--CODEGEN--\":24:25   */\n  dup1\n    /* \"--CODEGEN--\":17:29   */\n  revert\n    /* \"--CODEGEN--\":2:4   */\ntag_1:\n    /* \"Funciones avanzadas/internal_external.sol\":88:125  contract Sandwich is Comida{\r... */\n  pop\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"Funciones avanzadas/internal_external.sol\":88:125  contract Sandwich is Comida{\r... */\n      mstore(0x40, 0x80)\n        /* \"--CODEGEN--\":12:13   */\n      0x00\n        /* \"--CODEGEN--\":9:10   */\n      dup1\n        /* \"--CODEGEN--\":2:14   */\n      revert\n\n    auxdata: 0xa2646970667358221220deb2d1c441d7e60c6565440ce34ab8800ee185523a4c37031cb2df2649435d6764736f6c63430006050033\n}\n",
+						"bytecode": {
+							"linkReferences": {},
+							"object": "6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220deb2d1c441d7e60c6565440ce34ab8800ee185523a4c37031cb2df2649435d6764736f6c63430006050033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x3F DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xDE 0xB2 0xD1 0xC4 COINBASE 0xD7 0xE6 0xC PUSH6 0x65440CE34AB8 DUP1 0xE 0xE1 DUP6 MSTORE GASPRICE 0x4C CALLDATACOPY SUB SHR 0xB2 0xDF 0x26 0x49 NUMBER 0x5D PUSH8 0x64736F6C63430006 SDIV STOP CALLER ",
+							"sourceMap": "88:37:0:-:0;;;;5:9:-1;2:2;;;27:1;24;17:12;2:2;88:37:0;;;;;;;"
+						},
+						"deployedBytecode": {
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "6080604052600080fdfea2646970667358221220deb2d1c441d7e60c6565440ce34ab8800ee185523a4c37031cb2df2649435d6764736f6c63430006050033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xDE 0xB2 0xD1 0xC4 COINBASE 0xD7 0xE6 0xC PUSH6 0x65440CE34AB8 DUP1 0xE 0xE1 DUP6 MSTORE GASPRICE 0x4C CALLDATACOPY SUB SHR 0xB2 0xDF 0x26 0x49 NUMBER 0x5D PUSH8 0x64736F6C63430006 SDIV STOP CALLER ",
+							"sourceMap": "88:37:0:-:0;;;12:1:-1;9;2:12"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "12600",
+								"executionCost": "66",
+								"totalCost": "12666"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 88,
+									"end": 125,
+									"name": "PUSH",
+									"source": 0,
+									"value": "80"
+								},
+								{
+									"begin": 88,
+									"end": 125,
+									"name": "PUSH",
+									"source": 0,
+									"value": "40"
+								},
+								{
+									"begin": 88,
+									"end": 125,
+									"name": "MSTORE",
+									"source": 0
+								},
+								{
+									"begin": 88,
+									"end": 125,
+									"name": "CALLVALUE",
+									"source": 0
+								},
+								{
+									"begin": 5,
+									"end": 14,
+									"name": "DUP1",
+									"source": -1
+								},
+								{
+									"begin": 2,
+									"end": 4,
+									"name": "ISZERO",
+									"source": -1
+								},
+								{
+									"begin": 2,
+									"end": 4,
+									"name": "PUSH [tag]",
+									"source": -1,
+									"value": "1"
+								},
+								{
+									"begin": 2,
+									"end": 4,
+									"name": "JUMPI",
+									"source": -1
+								},
+								{
+									"begin": 27,
+									"end": 28,
+									"name": "PUSH",
+									"source": -1,
+									"value": "0"
+								},
+								{
+									"begin": 24,
+									"end": 25,
+									"name": "DUP1",
+									"source": -1
+								},
+								{
+									"begin": 17,
+									"end": 29,
+									"name": "REVERT",
+									"source": -1
+								},
+								{
+									"begin": 2,
+									"end": 4,
+									"name": "tag",
+									"source": -1,
+									"value": "1"
+								},
+								{
+									"begin": 2,
+									"end": 4,
+									"name": "JUMPDEST",
+									"source": -1
+								},
+								{
+									"begin": 88,
+									"end": 125,
+									"name": "POP",
+									"source": 0
+								},
+								{
+									"begin": 88,
+									"end": 125,
+									"name": "PUSH #[$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 88,
+									"end": 125,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 88,
+									"end": 125,
+									"name": "PUSH [$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 88,
+									"end": 125,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 88,
+									"end": 125,
+									"name": "CODECOPY",
+									"source": 0
+								},
+								{
+									"begin": 88,
+									"end": 125,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 88,
+									"end": 125,
+									"name": "RETURN",
+									"source": 0
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a2646970667358221220deb2d1c441d7e60c6565440ce34ab8800ee185523a4c37031cb2df2649435d6764736f6c63430006050033",
+									".code": [
+										{
+											"begin": 88,
+											"end": 125,
+											"name": "PUSH",
+											"source": 0,
+											"value": "80"
+										},
+										{
+											"begin": 88,
+											"end": 125,
+											"name": "PUSH",
+											"source": 0,
+											"value": "40"
+										},
+										{
+											"begin": 88,
+											"end": 125,
+											"name": "MSTORE",
+											"source": 0
+										},
+										{
+											"begin": 12,
+											"end": 13,
+											"name": "PUSH",
+											"source": -1,
+											"value": "0"
+										},
+										{
+											"begin": 9,
+											"end": 10,
+											"name": "DUP1",
+											"source": -1
+										},
+										{
+											"begin": 2,
+											"end": 14,
+											"name": "REVERT",
+											"source": -1
+										}
+									]
+								}
+							}
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.6.5+commit.f956cc89\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"Funciones avanzadas/internal_external.sol\":\"Sandwich\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"Funciones avanzadas/internal_external.sol\":{\"keccak256\":\"0x3d61417b0c7f3d3d975b65ef5981e061364c87ee538f967af1301e5a36a3f38b\",\"urls\":[\"bzz-raw://6601bc9f9ce47ec6df19ba5f9c722d464614595cf7c8e9858622e314fe0337ae\",\"dweb:/ipfs/QmVn9FugrU1Eaqi6KkWrtsnGRa2NhmwpAFpg4kbsgScbVF\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [],
+						"types": null
+					},
+					"userdoc": {
+						"methods": {}
+					}
+				}
+			}
+		},
+		"sources": {
+			"Funciones avanzadas/internal_external.sol": {
+				"ast": {
+					"absolutePath": "Funciones avanzadas/internal_external.sol",
+					"exportedSymbols": {
+						"Comida": [
+							2
+						],
+						"Sandwich": [
+							5
+						]
+					},
+					"id": 6,
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								">=",
+								"0.4",
+								".4",
+								"<",
+								"0.7",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "28:31:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"documentation": null,
+							"fullyImplemented": true,
+							"id": 2,
+							"linearizedBaseContracts": [
+								2
+							],
+							"name": "Comida",
+							"nodeType": "ContractDefinition",
+							"nodes": [],
+							"scope": 6,
+							"src": "63:21:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [
+								{
+									"arguments": null,
+									"baseName": {
+										"contractScope": null,
+										"id": 3,
+										"name": "Comida",
+										"nodeType": "UserDefinedTypeName",
+										"referencedDeclaration": 2,
+										"src": "109:6:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_contract$_Comida_$2",
+											"typeString": "contract Comida"
+										}
+									},
+									"id": 4,
+									"nodeType": "InheritanceSpecifier",
+									"src": "109:6:0"
+								}
+							],
+							"contractDependencies": [
+								2
+							],
+							"contractKind": "contract",
+							"documentation": null,
+							"fullyImplemented": true,
+							"id": 5,
+							"linearizedBaseContracts": [
+								5,
+								2
+							],
+							"name": "Sandwich",
+							"nodeType": "ContractDefinition",
+							"nodes": [],
+							"scope": 6,
+							"src": "88:37:0"
+						}
+					],
+					"src": "28:97:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

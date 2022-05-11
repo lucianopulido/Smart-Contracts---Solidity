@@ -1,0 +1,69 @@
+{
+	"id": "e0b44279bb74b4a49f508d6ddd954a17",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.6.5",
+	"solcLongVersion": "0.6.5+commit.f956cc89",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"Funciones avanzadas/require.sol": {
+				"content": ""
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"errors": [
+			{
+				"component": "general",
+				"formattedMessage": "Funciones avanzadas/require.sol: Warning: Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.6.5;\"\n",
+				"message": "Source file does not specify required compiler version! Consider adding \"pragma solidity ^0.6.5;\"",
+				"severity": "warning",
+				"sourceLocation": {
+					"end": -1,
+					"file": "Funciones avanzadas/require.sol",
+					"start": -1
+				},
+				"type": "Warning"
+			}
+		],
+		"sources": {
+			"Funciones avanzadas/require.sol": {
+				"ast": {
+					"absolutePath": "Funciones avanzadas/require.sol",
+					"exportedSymbols": {},
+					"id": 1,
+					"nodeType": "SourceUnit",
+					"nodes": [],
+					"src": "0:0:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

@@ -1,0 +1,79 @@
+{
+	"id": "a88cf669c593001e383b7fcdc162c183",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.6.5",
+	"solcLongVersion": "0.6.5+commit.f956cc89",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"Sistema de evaluaciones universitarias/NOTAS/notas.sol": {
+				"content": "pragma solidity >=0.4.4 <0.9.0;\r\npragma experimental ABIEncoderV2;"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"sources": {
+			"Sistema de evaluaciones universitarias/NOTAS/notas.sol": {
+				"ast": {
+					"absolutePath": "Sistema de evaluaciones universitarias/NOTAS/notas.sol",
+					"exportedSymbols": {},
+					"id": 3,
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								">=",
+								"0.4",
+								".4",
+								"<",
+								"0.9",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "0:31:0"
+						},
+						{
+							"id": 2,
+							"literals": [
+								"experimental",
+								"ABIEncoderV2"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "33:33:0"
+						}
+					],
+					"src": "0:66:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}

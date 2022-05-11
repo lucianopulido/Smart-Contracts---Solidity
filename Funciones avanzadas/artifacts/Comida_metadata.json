@@ -1,0 +1,45 @@
+{
+	"compiler": {
+		"version": "0.8.13+commit.abaa5c0e"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"Funciones avanzadas/internal_external.sol": "Comida"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"Funciones avanzadas/internal_external.sol": {
+			"keccak256": "0xaaa7ec07ce8a3dae270983d8a5316a224f9a37b56638b4aa6b6df4257129d188",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://39c4b5be864a454a086cb408cd546aef45f8e6bdcc3e87d742f55f06fe5df4a4",
+				"dweb:/ipfs/QmP36HiSoNMtUt2SAm7curMLb2bwntddoXynLxX6QQvxXV"
+			]
+		}
+	},
+	"version": 1
+}

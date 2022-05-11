@@ -1,0 +1,915 @@
+{
+	"id": "238e4d3ef9e1682516bb5efcc05fb2a5",
+	"_format": "hh-sol-build-info-1",
+	"solcVersion": "0.6.5",
+	"solcLongVersion": "0.6.5+commit.f956cc89",
+	"input": {
+		"language": "Solidity",
+		"sources": {
+			"Funciones avanzadas/internal_external.sol": {
+				"content": "//Especificamos la version\r\npragma solidity >=0.4.4 <0.7.0;\r\n\r\ncontract Comida{\r\n\r\n    struct Plato{\r\n        string nombre;\r\n        string ingredientes;\r\n        uint tiempo;\r\n    }\r\n\r\n    Plato [] platos;\r\n\r\n    // relacionamos nombre del plato con sus ingredientes\r\n    mapping(string => string) ingredientes;\r\n\r\n}\r\n\r\ncontract Sandwich is Comida{\r\n\r\n}"
+			}
+		},
+		"settings": {
+			"optimizer": {
+				"enabled": false,
+				"runs": 200
+			},
+			"outputSelection": {
+				"*": {
+					"": [
+						"ast"
+					],
+					"*": [
+						"abi",
+						"metadata",
+						"devdoc",
+						"userdoc",
+						"storageLayout",
+						"evm.legacyAssembly",
+						"evm.bytecode",
+						"evm.deployedBytecode",
+						"evm.methodIdentifiers",
+						"evm.gasEstimates",
+						"evm.assembly"
+					]
+				}
+			}
+		}
+	},
+	"output": {
+		"contracts": {
+			"Funciones avanzadas/internal_external.sol": {
+				"Comida": {
+					"abi": [],
+					"devdoc": {
+						"methods": {}
+					},
+					"evm": {
+						"assembly": "    /* \"Funciones avanzadas/internal_external.sol\":63:318  contract Comida{\r... */\n  mstore(0x40, 0x80)\n  callvalue\n    /* \"--CODEGEN--\":5:14   */\n  dup1\n    /* \"--CODEGEN--\":2:4   */\n  iszero\n  tag_1\n  jumpi\n    /* \"--CODEGEN--\":27:28   */\n  0x00\n    /* \"--CODEGEN--\":24:25   */\n  dup1\n    /* \"--CODEGEN--\":17:29   */\n  revert\n    /* \"--CODEGEN--\":2:4   */\ntag_1:\n    /* \"Funciones avanzadas/internal_external.sol\":63:318  contract Comida{\r... */\n  pop\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"Funciones avanzadas/internal_external.sol\":63:318  contract Comida{\r... */\n      mstore(0x40, 0x80)\n        /* \"--CODEGEN--\":12:13   */\n      0x00\n        /* \"--CODEGEN--\":9:10   */\n      dup1\n        /* \"--CODEGEN--\":2:14   */\n      revert\n\n    auxdata: 0xa2646970667358221220fc670e6c830067c25433e438bf5f0d068cc7b582f71e8266e41bf3467496740b64736f6c63430006050033\n}\n",
+						"bytecode": {
+							"linkReferences": {},
+							"object": "6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220fc670e6c830067c25433e438bf5f0d068cc7b582f71e8266e41bf3467496740b64736f6c63430006050033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x3F DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xFC PUSH8 0xE6C830067C25433 0xE4 CODESIZE 0xBF 0x5F 0xD MOD DUP13 0xC7 0xB5 DUP3 0xF7 0x1E DUP3 PUSH7 0xE41BF346749674 SIGNEXTEND PUSH5 0x736F6C6343 STOP MOD SDIV STOP CALLER ",
+							"sourceMap": "63:255:0:-:0;;;;5:9:-1;2:2;;;27:1;24;17:12;2:2;63:255:0;;;;;;;"
+						},
+						"deployedBytecode": {
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "6080604052600080fdfea2646970667358221220fc670e6c830067c25433e438bf5f0d068cc7b582f71e8266e41bf3467496740b64736f6c63430006050033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xFC PUSH8 0xE6C830067C25433 0xE4 CODESIZE 0xBF 0x5F 0xD MOD DUP13 0xC7 0xB5 DUP3 0xF7 0x1E DUP3 PUSH7 0xE41BF346749674 SIGNEXTEND PUSH5 0x736F6C6343 STOP MOD SDIV STOP CALLER ",
+							"sourceMap": "63:255:0:-:0;;;12:1:-1;9;2:12"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "12600",
+								"executionCost": "66",
+								"totalCost": "12666"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 63,
+									"end": 318,
+									"name": "PUSH",
+									"source": 0,
+									"value": "80"
+								},
+								{
+									"begin": 63,
+									"end": 318,
+									"name": "PUSH",
+									"source": 0,
+									"value": "40"
+								},
+								{
+									"begin": 63,
+									"end": 318,
+									"name": "MSTORE",
+									"source": 0
+								},
+								{
+									"begin": 63,
+									"end": 318,
+									"name": "CALLVALUE",
+									"source": 0
+								},
+								{
+									"begin": 5,
+									"end": 14,
+									"name": "DUP1",
+									"source": -1
+								},
+								{
+									"begin": 2,
+									"end": 4,
+									"name": "ISZERO",
+									"source": -1
+								},
+								{
+									"begin": 2,
+									"end": 4,
+									"name": "PUSH [tag]",
+									"source": -1,
+									"value": "1"
+								},
+								{
+									"begin": 2,
+									"end": 4,
+									"name": "JUMPI",
+									"source": -1
+								},
+								{
+									"begin": 27,
+									"end": 28,
+									"name": "PUSH",
+									"source": -1,
+									"value": "0"
+								},
+								{
+									"begin": 24,
+									"end": 25,
+									"name": "DUP1",
+									"source": -1
+								},
+								{
+									"begin": 17,
+									"end": 29,
+									"name": "REVERT",
+									"source": -1
+								},
+								{
+									"begin": 2,
+									"end": 4,
+									"name": "tag",
+									"source": -1,
+									"value": "1"
+								},
+								{
+									"begin": 2,
+									"end": 4,
+									"name": "JUMPDEST",
+									"source": -1
+								},
+								{
+									"begin": 63,
+									"end": 318,
+									"name": "POP",
+									"source": 0
+								},
+								{
+									"begin": 63,
+									"end": 318,
+									"name": "PUSH #[$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 63,
+									"end": 318,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 63,
+									"end": 318,
+									"name": "PUSH [$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 63,
+									"end": 318,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 63,
+									"end": 318,
+									"name": "CODECOPY",
+									"source": 0
+								},
+								{
+									"begin": 63,
+									"end": 318,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 63,
+									"end": 318,
+									"name": "RETURN",
+									"source": 0
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a2646970667358221220fc670e6c830067c25433e438bf5f0d068cc7b582f71e8266e41bf3467496740b64736f6c63430006050033",
+									".code": [
+										{
+											"begin": 63,
+											"end": 318,
+											"name": "PUSH",
+											"source": 0,
+											"value": "80"
+										},
+										{
+											"begin": 63,
+											"end": 318,
+											"name": "PUSH",
+											"source": 0,
+											"value": "40"
+										},
+										{
+											"begin": 63,
+											"end": 318,
+											"name": "MSTORE",
+											"source": 0
+										},
+										{
+											"begin": 12,
+											"end": 13,
+											"name": "PUSH",
+											"source": -1,
+											"value": "0"
+										},
+										{
+											"begin": 9,
+											"end": 10,
+											"name": "DUP1",
+											"source": -1
+										},
+										{
+											"begin": 2,
+											"end": 14,
+											"name": "REVERT",
+											"source": -1
+										}
+									]
+								}
+							}
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.6.5+commit.f956cc89\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"Funciones avanzadas/internal_external.sol\":\"Comida\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"Funciones avanzadas/internal_external.sol\":{\"keccak256\":\"0x9420fafa3e75851ddba424e093a7a38c0bc6d0befd0a96ca835c6507a820732d\",\"urls\":[\"bzz-raw://41c9c1e2b3682da383f461632efdd00a03cec7be263b27ef217ca16e73a7555f\",\"dweb:/ipfs/QmYjKP7acmdKcfS6yqVJAYfQRvpwFAu3RLnwzA9mJpaxZw\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [
+							{
+								"astId": 11,
+								"contract": "Funciones avanzadas/internal_external.sol:Comida",
+								"label": "platos",
+								"offset": 0,
+								"slot": "0",
+								"type": "t_array(t_struct(Plato)8_storage)dyn_storage"
+							},
+							{
+								"astId": 15,
+								"contract": "Funciones avanzadas/internal_external.sol:Comida",
+								"label": "ingredientes",
+								"offset": 0,
+								"slot": "1",
+								"type": "t_mapping(t_string_memory_ptr,t_string_storage)"
+							}
+						],
+						"types": {
+							"t_array(t_struct(Plato)8_storage)dyn_storage": {
+								"base": "t_struct(Plato)8_storage",
+								"encoding": "dynamic_array",
+								"label": "struct Comida.Plato[]",
+								"numberOfBytes": "32"
+							},
+							"t_mapping(t_string_memory_ptr,t_string_storage)": {
+								"encoding": "mapping",
+								"key": "t_string_memory_ptr",
+								"label": "mapping(string => string)",
+								"numberOfBytes": "32",
+								"value": "t_string_storage"
+							},
+							"t_string_memory_ptr": {
+								"encoding": "bytes",
+								"label": "string",
+								"numberOfBytes": "32"
+							},
+							"t_string_storage": {
+								"encoding": "bytes",
+								"label": "string",
+								"numberOfBytes": "32"
+							},
+							"t_struct(Plato)8_storage": {
+								"encoding": "inplace",
+								"label": "struct Comida.Plato",
+								"members": [
+									{
+										"astId": 3,
+										"contract": "Funciones avanzadas/internal_external.sol:Comida",
+										"label": "nombre",
+										"offset": 0,
+										"slot": "0",
+										"type": "t_string_storage"
+									},
+									{
+										"astId": 5,
+										"contract": "Funciones avanzadas/internal_external.sol:Comida",
+										"label": "ingredientes",
+										"offset": 0,
+										"slot": "1",
+										"type": "t_string_storage"
+									},
+									{
+										"astId": 7,
+										"contract": "Funciones avanzadas/internal_external.sol:Comida",
+										"label": "tiempo",
+										"offset": 0,
+										"slot": "2",
+										"type": "t_uint256"
+									}
+								],
+								"numberOfBytes": "96"
+							},
+							"t_uint256": {
+								"encoding": "inplace",
+								"label": "uint256",
+								"numberOfBytes": "32"
+							}
+						}
+					},
+					"userdoc": {
+						"methods": {}
+					}
+				},
+				"Sandwich": {
+					"abi": [],
+					"devdoc": {
+						"methods": {}
+					},
+					"evm": {
+						"assembly": "    /* \"Funciones avanzadas/internal_external.sol\":322:355  contract Sandwich is Comida{\r... */\n  mstore(0x40, 0x80)\n  callvalue\n    /* \"--CODEGEN--\":5:14   */\n  dup1\n    /* \"--CODEGEN--\":2:4   */\n  iszero\n  tag_1\n  jumpi\n    /* \"--CODEGEN--\":27:28   */\n  0x00\n    /* \"--CODEGEN--\":24:25   */\n  dup1\n    /* \"--CODEGEN--\":17:29   */\n  revert\n    /* \"--CODEGEN--\":2:4   */\ntag_1:\n    /* \"Funciones avanzadas/internal_external.sol\":322:355  contract Sandwich is Comida{\r... */\n  pop\n  dataSize(sub_0)\n  dup1\n  dataOffset(sub_0)\n  0x00\n  codecopy\n  0x00\n  return\nstop\n\nsub_0: assembly {\n        /* \"Funciones avanzadas/internal_external.sol\":322:355  contract Sandwich is Comida{\r... */\n      mstore(0x40, 0x80)\n        /* \"--CODEGEN--\":12:13   */\n      0x00\n        /* \"--CODEGEN--\":9:10   */\n      dup1\n        /* \"--CODEGEN--\":2:14   */\n      revert\n\n    auxdata: 0xa2646970667358221220e9603a001280fbdfec45b41422398edfa10d3f076ac697aca5c4e6b9c76d330e64736f6c63430006050033\n}\n",
+						"bytecode": {
+							"linkReferences": {},
+							"object": "6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220e9603a001280fbdfec45b41422398edfa10d3f076ac697aca5c4e6b9c76d330e64736f6c63430006050033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE CALLVALUE DUP1 ISZERO PUSH1 0xF JUMPI PUSH1 0x0 DUP1 REVERT JUMPDEST POP PUSH1 0x3F DUP1 PUSH1 0x1D PUSH1 0x0 CODECOPY PUSH1 0x0 RETURN INVALID PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xE9 PUSH1 0x3A STOP SLT DUP1 0xFB 0xDF 0xEC GASLIMIT 0xB4 EQ 0x22 CODECOPY DUP15 0xDF LOG1 0xD EXTCODEHASH SMOD PUSH11 0xC697ACA5C4E6B9C76D330E PUSH5 0x736F6C6343 STOP MOD SDIV STOP CALLER ",
+							"sourceMap": "322:33:0:-:0;;;;5:9:-1;2:2;;;27:1;24;17:12;2:2;322:33:0;;;;;;;"
+						},
+						"deployedBytecode": {
+							"immutableReferences": {},
+							"linkReferences": {},
+							"object": "6080604052600080fdfea2646970667358221220e9603a001280fbdfec45b41422398edfa10d3f076ac697aca5c4e6b9c76d330e64736f6c63430006050033",
+							"opcodes": "PUSH1 0x80 PUSH1 0x40 MSTORE PUSH1 0x0 DUP1 REVERT INVALID LOG2 PUSH5 0x6970667358 0x22 SLT KECCAK256 0xE9 PUSH1 0x3A STOP SLT DUP1 0xFB 0xDF 0xEC GASLIMIT 0xB4 EQ 0x22 CODECOPY DUP15 0xDF LOG1 0xD EXTCODEHASH SMOD PUSH11 0xC697ACA5C4E6B9C76D330E PUSH5 0x736F6C6343 STOP MOD SDIV STOP CALLER ",
+							"sourceMap": "322:33:0:-:0;;;12:1:-1;9;2:12"
+						},
+						"gasEstimates": {
+							"creation": {
+								"codeDepositCost": "12600",
+								"executionCost": "66",
+								"totalCost": "12666"
+							}
+						},
+						"legacyAssembly": {
+							".code": [
+								{
+									"begin": 322,
+									"end": 355,
+									"name": "PUSH",
+									"source": 0,
+									"value": "80"
+								},
+								{
+									"begin": 322,
+									"end": 355,
+									"name": "PUSH",
+									"source": 0,
+									"value": "40"
+								},
+								{
+									"begin": 322,
+									"end": 355,
+									"name": "MSTORE",
+									"source": 0
+								},
+								{
+									"begin": 322,
+									"end": 355,
+									"name": "CALLVALUE",
+									"source": 0
+								},
+								{
+									"begin": 5,
+									"end": 14,
+									"name": "DUP1",
+									"source": -1
+								},
+								{
+									"begin": 2,
+									"end": 4,
+									"name": "ISZERO",
+									"source": -1
+								},
+								{
+									"begin": 2,
+									"end": 4,
+									"name": "PUSH [tag]",
+									"source": -1,
+									"value": "1"
+								},
+								{
+									"begin": 2,
+									"end": 4,
+									"name": "JUMPI",
+									"source": -1
+								},
+								{
+									"begin": 27,
+									"end": 28,
+									"name": "PUSH",
+									"source": -1,
+									"value": "0"
+								},
+								{
+									"begin": 24,
+									"end": 25,
+									"name": "DUP1",
+									"source": -1
+								},
+								{
+									"begin": 17,
+									"end": 29,
+									"name": "REVERT",
+									"source": -1
+								},
+								{
+									"begin": 2,
+									"end": 4,
+									"name": "tag",
+									"source": -1,
+									"value": "1"
+								},
+								{
+									"begin": 2,
+									"end": 4,
+									"name": "JUMPDEST",
+									"source": -1
+								},
+								{
+									"begin": 322,
+									"end": 355,
+									"name": "POP",
+									"source": 0
+								},
+								{
+									"begin": 322,
+									"end": 355,
+									"name": "PUSH #[$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 322,
+									"end": 355,
+									"name": "DUP1",
+									"source": 0
+								},
+								{
+									"begin": 322,
+									"end": 355,
+									"name": "PUSH [$]",
+									"source": 0,
+									"value": "0000000000000000000000000000000000000000000000000000000000000000"
+								},
+								{
+									"begin": 322,
+									"end": 355,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 322,
+									"end": 355,
+									"name": "CODECOPY",
+									"source": 0
+								},
+								{
+									"begin": 322,
+									"end": 355,
+									"name": "PUSH",
+									"source": 0,
+									"value": "0"
+								},
+								{
+									"begin": 322,
+									"end": 355,
+									"name": "RETURN",
+									"source": 0
+								}
+							],
+							".data": {
+								"0": {
+									".auxdata": "a2646970667358221220e9603a001280fbdfec45b41422398edfa10d3f076ac697aca5c4e6b9c76d330e64736f6c63430006050033",
+									".code": [
+										{
+											"begin": 322,
+											"end": 355,
+											"name": "PUSH",
+											"source": 0,
+											"value": "80"
+										},
+										{
+											"begin": 322,
+											"end": 355,
+											"name": "PUSH",
+											"source": 0,
+											"value": "40"
+										},
+										{
+											"begin": 322,
+											"end": 355,
+											"name": "MSTORE",
+											"source": 0
+										},
+										{
+											"begin": 12,
+											"end": 13,
+											"name": "PUSH",
+											"source": -1,
+											"value": "0"
+										},
+										{
+											"begin": 9,
+											"end": 10,
+											"name": "DUP1",
+											"source": -1
+										},
+										{
+											"begin": 2,
+											"end": 14,
+											"name": "REVERT",
+											"source": -1
+										}
+									]
+								}
+							}
+						},
+						"methodIdentifiers": {}
+					},
+					"metadata": "{\"compiler\":{\"version\":\"0.6.5+commit.f956cc89\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"Funciones avanzadas/internal_external.sol\":\"Sandwich\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"Funciones avanzadas/internal_external.sol\":{\"keccak256\":\"0x9420fafa3e75851ddba424e093a7a38c0bc6d0befd0a96ca835c6507a820732d\",\"urls\":[\"bzz-raw://41c9c1e2b3682da383f461632efdd00a03cec7be263b27ef217ca16e73a7555f\",\"dweb:/ipfs/QmYjKP7acmdKcfS6yqVJAYfQRvpwFAu3RLnwzA9mJpaxZw\"]}},\"version\":1}",
+					"storageLayout": {
+						"storage": [
+							{
+								"astId": 11,
+								"contract": "Funciones avanzadas/internal_external.sol:Sandwich",
+								"label": "platos",
+								"offset": 0,
+								"slot": "0",
+								"type": "t_array(t_struct(Plato)8_storage)dyn_storage"
+							},
+							{
+								"astId": 15,
+								"contract": "Funciones avanzadas/internal_external.sol:Sandwich",
+								"label": "ingredientes",
+								"offset": 0,
+								"slot": "1",
+								"type": "t_mapping(t_string_memory_ptr,t_string_storage)"
+							}
+						],
+						"types": {
+							"t_array(t_struct(Plato)8_storage)dyn_storage": {
+								"base": "t_struct(Plato)8_storage",
+								"encoding": "dynamic_array",
+								"label": "struct Comida.Plato[]",
+								"numberOfBytes": "32"
+							},
+							"t_mapping(t_string_memory_ptr,t_string_storage)": {
+								"encoding": "mapping",
+								"key": "t_string_memory_ptr",
+								"label": "mapping(string => string)",
+								"numberOfBytes": "32",
+								"value": "t_string_storage"
+							},
+							"t_string_memory_ptr": {
+								"encoding": "bytes",
+								"label": "string",
+								"numberOfBytes": "32"
+							},
+							"t_string_storage": {
+								"encoding": "bytes",
+								"label": "string",
+								"numberOfBytes": "32"
+							},
+							"t_struct(Plato)8_storage": {
+								"encoding": "inplace",
+								"label": "struct Comida.Plato",
+								"members": [
+									{
+										"astId": 3,
+										"contract": "Funciones avanzadas/internal_external.sol:Sandwich",
+										"label": "nombre",
+										"offset": 0,
+										"slot": "0",
+										"type": "t_string_storage"
+									},
+									{
+										"astId": 5,
+										"contract": "Funciones avanzadas/internal_external.sol:Sandwich",
+										"label": "ingredientes",
+										"offset": 0,
+										"slot": "1",
+										"type": "t_string_storage"
+									},
+									{
+										"astId": 7,
+										"contract": "Funciones avanzadas/internal_external.sol:Sandwich",
+										"label": "tiempo",
+										"offset": 0,
+										"slot": "2",
+										"type": "t_uint256"
+									}
+								],
+								"numberOfBytes": "96"
+							},
+							"t_uint256": {
+								"encoding": "inplace",
+								"label": "uint256",
+								"numberOfBytes": "32"
+							}
+						}
+					},
+					"userdoc": {
+						"methods": {}
+					}
+				}
+			}
+		},
+		"sources": {
+			"Funciones avanzadas/internal_external.sol": {
+				"ast": {
+					"absolutePath": "Funciones avanzadas/internal_external.sol",
+					"exportedSymbols": {
+						"Comida": [
+							16
+						],
+						"Sandwich": [
+							19
+						]
+					},
+					"id": 20,
+					"nodeType": "SourceUnit",
+					"nodes": [
+						{
+							"id": 1,
+							"literals": [
+								"solidity",
+								">=",
+								"0.4",
+								".4",
+								"<",
+								"0.7",
+								".0"
+							],
+							"nodeType": "PragmaDirective",
+							"src": "28:31:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [],
+							"contractDependencies": [],
+							"contractKind": "contract",
+							"documentation": null,
+							"fullyImplemented": true,
+							"id": 16,
+							"linearizedBaseContracts": [
+								16
+							],
+							"name": "Comida",
+							"nodeType": "ContractDefinition",
+							"nodes": [
+								{
+									"canonicalName": "Comida.Plato",
+									"id": 8,
+									"members": [
+										{
+											"constant": false,
+											"id": 3,
+											"name": "nombre",
+											"nodeType": "VariableDeclaration",
+											"overrides": null,
+											"scope": 8,
+											"src": "110:13:0",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_string_storage_ptr",
+												"typeString": "string"
+											},
+											"typeName": {
+												"id": 2,
+												"name": "string",
+												"nodeType": "ElementaryTypeName",
+												"src": "110:6:0",
+												"typeDescriptions": {
+													"typeIdentifier": "t_string_storage_ptr",
+													"typeString": "string"
+												}
+											},
+											"value": null,
+											"visibility": "internal"
+										},
+										{
+											"constant": false,
+											"id": 5,
+											"name": "ingredientes",
+											"nodeType": "VariableDeclaration",
+											"overrides": null,
+											"scope": 8,
+											"src": "134:19:0",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_string_storage_ptr",
+												"typeString": "string"
+											},
+											"typeName": {
+												"id": 4,
+												"name": "string",
+												"nodeType": "ElementaryTypeName",
+												"src": "134:6:0",
+												"typeDescriptions": {
+													"typeIdentifier": "t_string_storage_ptr",
+													"typeString": "string"
+												}
+											},
+											"value": null,
+											"visibility": "internal"
+										},
+										{
+											"constant": false,
+											"id": 7,
+											"name": "tiempo",
+											"nodeType": "VariableDeclaration",
+											"overrides": null,
+											"scope": 8,
+											"src": "164:11:0",
+											"stateVariable": false,
+											"storageLocation": "default",
+											"typeDescriptions": {
+												"typeIdentifier": "t_uint256",
+												"typeString": "uint256"
+											},
+											"typeName": {
+												"id": 6,
+												"name": "uint",
+												"nodeType": "ElementaryTypeName",
+												"src": "164:4:0",
+												"typeDescriptions": {
+													"typeIdentifier": "t_uint256",
+													"typeString": "uint256"
+												}
+											},
+											"value": null,
+											"visibility": "internal"
+										}
+									],
+									"name": "Plato",
+									"nodeType": "StructDefinition",
+									"scope": 16,
+									"src": "87:96:0",
+									"visibility": "public"
+								},
+								{
+									"constant": false,
+									"id": 11,
+									"name": "platos",
+									"nodeType": "VariableDeclaration",
+									"overrides": null,
+									"scope": 16,
+									"src": "191:15:0",
+									"stateVariable": true,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_array$_t_struct$_Plato_$8_storage_$dyn_storage",
+										"typeString": "struct Comida.Plato[]"
+									},
+									"typeName": {
+										"baseType": {
+											"contractScope": null,
+											"id": 9,
+											"name": "Plato",
+											"nodeType": "UserDefinedTypeName",
+											"referencedDeclaration": 8,
+											"src": "191:5:0",
+											"typeDescriptions": {
+												"typeIdentifier": "t_struct$_Plato_$8_storage_ptr",
+												"typeString": "struct Comida.Plato"
+											}
+										},
+										"id": 10,
+										"length": null,
+										"nodeType": "ArrayTypeName",
+										"src": "191:8:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_array$_t_struct$_Plato_$8_storage_$dyn_storage_ptr",
+											"typeString": "struct Comida.Plato[]"
+										}
+									},
+									"value": null,
+									"visibility": "internal"
+								},
+								{
+									"constant": false,
+									"id": 15,
+									"name": "ingredientes",
+									"nodeType": "VariableDeclaration",
+									"overrides": null,
+									"scope": 16,
+									"src": "274:38:0",
+									"stateVariable": true,
+									"storageLocation": "default",
+									"typeDescriptions": {
+										"typeIdentifier": "t_mapping$_t_string_memory_ptr_$_t_string_storage_$",
+										"typeString": "mapping(string => string)"
+									},
+									"typeName": {
+										"id": 14,
+										"keyType": {
+											"id": 12,
+											"name": "string",
+											"nodeType": "ElementaryTypeName",
+											"src": "282:6:0",
+											"typeDescriptions": {
+												"typeIdentifier": "t_string_storage_ptr",
+												"typeString": "string"
+											}
+										},
+										"nodeType": "Mapping",
+										"src": "274:25:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_mapping$_t_string_memory_ptr_$_t_string_storage_$",
+											"typeString": "mapping(string => string)"
+										},
+										"valueType": {
+											"id": 13,
+											"name": "string",
+											"nodeType": "ElementaryTypeName",
+											"src": "292:6:0",
+											"typeDescriptions": {
+												"typeIdentifier": "t_string_storage_ptr",
+												"typeString": "string"
+											}
+										}
+									},
+									"value": null,
+									"visibility": "internal"
+								}
+							],
+							"scope": 20,
+							"src": "63:255:0"
+						},
+						{
+							"abstract": false,
+							"baseContracts": [
+								{
+									"arguments": null,
+									"baseName": {
+										"contractScope": null,
+										"id": 17,
+										"name": "Comida",
+										"nodeType": "UserDefinedTypeName",
+										"referencedDeclaration": 16,
+										"src": "343:6:0",
+										"typeDescriptions": {
+											"typeIdentifier": "t_contract$_Comida_$16",
+											"typeString": "contract Comida"
+										}
+									},
+									"id": 18,
+									"nodeType": "InheritanceSpecifier",
+									"src": "343:6:0"
+								}
+							],
+							"contractDependencies": [
+								16
+							],
+							"contractKind": "contract",
+							"documentation": null,
+							"fullyImplemented": true,
+							"id": 19,
+							"linearizedBaseContracts": [
+								19,
+								16
+							],
+							"name": "Sandwich",
+							"nodeType": "ContractDefinition",
+							"nodes": [],
+							"scope": 20,
+							"src": "322:33:0"
+						}
+					],
+					"src": "28:327:0"
+				},
+				"id": 0
+			}
+		}
+	}
+}
